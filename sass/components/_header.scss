@@ -11,10 +11,42 @@
 
 .header {
   border: 1px solid #ececec;
+}
 
-  & .container {
-    display: flex;
-    align-items: center;
+.header__logo-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__menu-btn {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: transform var(--effect-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+
+  .header__icon-close {
+    display: none;
+  }
+
+  .header__menu-btn.is-open .header__icon-close {
+    display: block;
+  }
+
+  .header__menu-btn.is-open .header__icon-menu {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 

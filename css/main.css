@@ -113,12 +113,18 @@ img {
 }
 
 .logo {
-  margin-right: 93px;
   color: var(--title-text-color);
   font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .main-nav,
@@ -136,9 +142,42 @@ img {
   border: 1px solid #ececec;
 }
 
-.header .container {
+.header__logo-wrapper {
   display: flex;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__menu-btn {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: transform var(--effect-duration) var(--timing-function);
+}
+
+.header__menu-btn:hover, .header__menu-btn:focus {
+  fill: var(--accent-color);
+}
+
+.header__menu-btn .header__icon-close {
+  display: none;
+}
+
+.header__menu-btn .header__menu-btn.is-open .header__icon-close {
+  display: block;
+}
+
+.header__menu-btn .header__menu-btn.is-open .header__icon-menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu-btn {
+    display: none;
+  }
 }
 
 .header-item {
