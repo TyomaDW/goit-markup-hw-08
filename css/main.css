@@ -155,7 +155,7 @@ img {
   background-color: transparent;
   cursor: pointer;
   padding: 0;
-  transition: transform var(--effect-duration) var(--timing-function);
+  transition: var(--effect-duration) var(--timing-function);
 }
 
 .header__menu-btn:hover, .header__menu-btn:focus {
