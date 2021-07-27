@@ -37,7 +37,7 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
-    margin-right: 80px;
+    margin-right: 79px;
     margin-bottom: 0;
     text-align: left;
   }
@@ -95,7 +95,7 @@
   color: var(--primary-white-color);
 
   @media screen and (min-width: 1200px) {
-    margin-right: 99px;
+    margin-right: 98px;
     margin-bottom: 0;
   }
 }
@@ -199,4 +199,11 @@
 
 .subscribe {
   display: flex;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.send {
+  margin-left: 10px;
 }

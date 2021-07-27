@@ -656,7 +656,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-adress {
-    margin-right: 80px;
+    margin-right: 79px;
     margin-bottom: 0;
     text-align: left;
   }
@@ -714,7 +714,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-join {
-    margin-right: 99px;
+    margin-right: 98px;
     margin-bottom: 0;
   }
 }
@@ -818,6 +818,13 @@ img {
 
 .subscribe {
   display: flex;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.send {
+  margin-left: 10px;
 }
 
 .projects {
