@@ -134,11 +134,15 @@ img {
   }
 }
 
-.main-nav,
-.site-nav,
-.auth-nav {
+.menu {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
 }
 
 .auth-nav {

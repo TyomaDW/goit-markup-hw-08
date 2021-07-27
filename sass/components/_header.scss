@@ -1,9 +1,18 @@
-.main-nav,
-.site-nav,
-.auth-nav {
+.menu {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
+
+// .main-nav,
+// .site-nav,
+// .auth-nav {
+//   display: flex;
+//   align-items: center;
+// }
 
 .auth-nav {
   margin-left: auto;
