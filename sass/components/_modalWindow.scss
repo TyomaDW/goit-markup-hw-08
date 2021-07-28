@@ -33,6 +33,11 @@
   transform: translate(-50%, -50%) scale(1);
 
   transition: transform 500ms var(--timing-function), visibility 500ms var(--timing-function);
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .close {

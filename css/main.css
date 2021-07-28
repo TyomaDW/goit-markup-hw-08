@@ -1038,6 +1038,13 @@ img {
   transition: transform 500ms var(--timing-function), visibility 500ms var(--timing-function);
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
 .close {
   display: flex;
   align-items: center;
