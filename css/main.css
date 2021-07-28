@@ -1026,8 +1026,8 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 570px;
+  width: 450px;
+  height: 585px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1038,10 +1038,10 @@ img {
   transition: transform 500ms var(--timing-function), visibility 500ms var(--timing-function);
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media (min-width: 1200px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    width: 528px;
+    height: 570px;
   }
 }
 
@@ -1133,6 +1133,13 @@ textarea::placeholder {
   color: var(--accent-color);
 }
 
+@media (max-width: 1199px) {
+  .agreement {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 .checkbox-custom {
   display: inline-block;
   width: 16px;
@@ -1170,7 +1177,7 @@ textarea::placeholder {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 11px 16px;
+  padding: 12px 16px;
   transition: border var(--effect-duration) var(--timing-function);
 }
 
