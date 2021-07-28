@@ -10,6 +10,10 @@
   line-height: 1.16;
   text-decoration: none;
 
+  @media (min-width: 768px) {
+    padding: 26px 0 26px 0px;
+  }
+
   @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
