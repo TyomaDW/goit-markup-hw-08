@@ -165,7 +165,6 @@ img {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  padding: 0;
   transition: var(--effect-duration) var(--timing-function);
 }
 
@@ -214,14 +213,11 @@ img {
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
-  min-height: 63vh;
-  margin-bottom: 14px;
 }
 
 .mobile-menu__list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  min-height: 63vh;
 }
 
 .mobile-menu__item {
@@ -234,8 +230,6 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02em;
   list-style: none;
-  margin: 0 0 64px 0;
-  padding: 0;
 }
 
 .mobile-contacts__item {
@@ -254,15 +248,14 @@ img {
 
 .mobile-social {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
   list-style: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  padding: 0;
-  margin: 0 0 0 -10px;
+  margin-top: 64px;
 }
 
 .mobile-social__list {
