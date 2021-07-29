@@ -24,8 +24,7 @@
                 <a href="./index.html" class="logo">
                     <span class="accent">Web</span>Studio</a>
                 <button class="header__menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg width="40" height="40" aria-label="Переключатель мобильного меню"
-                        aria-controls="menu-container" aria-expanded="false" role="group">
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                         <use class="header__icon-menu" href="./images/icons.svg#icon-burger-menu"></use>
                     </svg>
                 </button>
@@ -129,7 +128,24 @@
                     <li class="projects-item">
                         <a class="projects-title project-bg description-wrapper" href="./">
                             <div class="description-list">
-                                <img src="./images/portfolio/img-1.jpg" alt="Скриншот сайта" width="450" height="294">
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-1.webp 1x, ./images/portfolio/mobile/portf-1@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-1.webp 1x, ./images/portfolio/mobile/portf-1@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-1.webp 1x, ./images/portfolio/mobile/portf-1@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-1.jpg 1x, ./images/portfolio/mobile/portf-1@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-1.jpg 1x, ./images/portfolio/mobile/portf-1@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-1.jpg 1x, ./images/portfolio/mobile/portf-1@2x.jpg 2x">
+                                    <img src="#" alt="Скриншот сайта">
+                                </picture>
                                 <p class="description">
                                     Технокряк это современная площадка распространения коронавируса. Компании
                                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -145,7 +161,24 @@
                     <li class="projects-item">
                         <a class="projects-title project-bg description-wrapper" href="./">
                             <div class="description-list">
-                                <img src="./images/portfolio/img-2.jpg" alt="Постер спорт" width="450" height="294">
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-2.webp 1x, ./images/portfolio/mobile/portf-2@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-2.webp 1x, ./images/portfolio/mobile/portf-2@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-2.webp 1x, ./images/portfolio/mobile/portf-2@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-2.jpg 1x, ./images/portfolio/mobile/portf-2@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-2.jpg 1x, ./images/portfolio/mobile/portf-2@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-2.jpg 1x, ./images/portfolio/mobile/portf-2@2x.jpg 2x">
+                                    <img src="#" alt="Постер спорт">
+                                </picture>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
                                     dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
@@ -163,7 +196,24 @@
                     <li class="projects-item">
                         <a class="projects-title project-bg description-wrapper" href="./">
                             <div class="description-list">
-                                <img src="./images/portfolio/img-3.jpg" alt="Лого сайта" width="450" height="294">
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-3.webp 1x, ./images/portfolio/mobile/portf-3@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-3.webp 1x, ./images/portfolio/mobile/portf-3@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-3.webp 1x, ./images/portfolio/mobile/portf-3@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-3.jpg 1x, ./images/portfolio/mobile/portf-3@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-3.jpg 1x, ./images/portfolio/mobile/portf-3@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-3.jpg 1x, ./images/portfolio/mobile/portf-3@2x.jpg 2x">
+                                    <img src="#" alt="Логотип сайта">
+                                </picture>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
                                     dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
@@ -181,7 +231,24 @@
                     <li class="projects-item">
                         <a class="projects-title project-bg description-wrapper" href="./">
                             <div class="description-list">
-                                <img src="./images/portfolio/img-4.jpg" alt="Наушники" width="450" height="294">
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-4.webp 1x, ./images/portfolio/mobile/portf-4@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-4.webp 1x, ./images/portfolio/mobile/portf-4@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-4.webp 1x, ./images/portfolio/mobile/portf-4@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-4.jpg 1x, ./images/portfolio/mobile/portf-4@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-4.jpg 1x, ./images/portfolio/mobile/portf-4@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-4.jpg 1x, ./images/portfolio/mobile/portf-4@2x.jpg 2x">
+                                    <img src="#" alt="Наушники">
+                                </picture>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
                                     dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
@@ -199,7 +266,24 @@
                     <li class="projects-item">
                         <a class="projects-title project-bg description-wrapper" href="./">
                             <div class="description-list">
-                                <img src="./images/portfolio/img-5.jpg" alt="Коробки" width="450" height="294">
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-5.webp 1x, ./images/portfolio/mobile/portf-5@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-5.webp 1x, ./images/portfolio/mobile/portf-5@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-5.webp 1x, ./images/portfolio/mobile/portf-5@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-5.jpg 1x, ./images/portfolio/mobile/portf-5@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-5.jpg 1x, ./images/portfolio/mobile/portf-5@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-5.jpg 1x, ./images/portfolio/mobile/portf-5@2x.jpg 2x">
+                                    <img src="#" alt="Коробки">
+                                </picture>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
                                     dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
@@ -217,7 +301,24 @@
                     <li class="projects-item">
                         <a class="projects-title project-bg description-wrapper" href="./">
                             <div class="description-list">
-                                <img src="./images/portfolio/img-6.jpg" alt="Скриншот сайта" width="450" height="294">
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-6.webp 1x, ./images/portfolio/mobile/portf-6@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-6.webp 1x, ./images/portfolio/mobile/portf-6@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-6.webp 1x, ./images/portfolio/mobile/portf-6@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-6.jpg 1x, ./images/portfolio/mobile/portf-6@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-6.jpg 1x, ./images/portfolio/mobile/portf-6@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-6.jpg 1x, ./images/portfolio/mobile/portf-6@2x.jpg 2x">
+                                    <img src="#" alt="Скриншот сайта">
+                                </picture>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
                                     dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
@@ -235,7 +336,24 @@
                     <li class="projects-item">
                         <a class="projects-title project-bg description-wrapper" href="./">
                             <div class="description-list">
-                                <img src="./images/portfolio/img-7.jpg" alt="Журнал" width="450" height="294">
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-7.webp 1x, ./images/portfolio/mobile/portf-7@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-7.webp 1x, ./images/portfolio/mobile/portf-7@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-7.webp 1x, ./images/portfolio/mobile/portf-7@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-7.jpg 1x, ./images/portfolio/mobile/portf-7@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-7.jpg 1x, ./images/portfolio/mobile/portf-7@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-7.jpg 1x, ./images/portfolio/mobile/portf-7@2x.jpg 2x">
+                                    <img src="#" alt="Журнал">
+                                </picture>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
                                     dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
@@ -253,7 +371,24 @@
                     <li class="projects-item">
                         <a class="projects-title project-bg description-wrapper" href="./">
                             <div class="description-list">
-                                <img src="./images/portfolio/img-8.jpg" alt="Лейба" width="450" height="294">
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-8.webp 1x, ./images/portfolio/mobile/portf-8@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-8.webp 1x, ./images/portfolio/mobile/portf-8@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-8.webp 1x, ./images/portfolio/mobile/portf-8@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-8.jpg 1x, ./images/portfolio/mobile/portf-8@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-8.jpg 1x, ./images/portfolio/mobile/portf-8@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-8.jpg 1x, ./images/portfolio/mobile/portf-8@2x.jpg 2x">
+                                    <img src="#" alt="Лейба">
+                                </picture>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
                                     dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
@@ -271,8 +406,24 @@
                     <li class="projects-item">
                         <a class="projects-title project-bg description-wrapper" href="./">
                             <div class="description-list">
-                                <img src="./images/portfolio/img-9.jpg" alt="Работа за крмпьютером" width="450"
-                                    height="294">
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-9.webp 1x, ./images/portfolio/mobile/portf-9@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-9.webp 1x, ./images/portfolio/mobile/portf-9@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-9.webp 1x, ./images/portfolio/mobile/portf-9@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/mobile/portf-9.jpg 1x, ./images/portfolio/mobile/portf-9@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/mobile/portf-9.jpg 1x, ./images/portfolio/mobile/portf-9@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/mobile/portf-9.jpg 1x, ./images/portfolio/mobile/portf-9@2x.jpg 2x">
+                                    <img src="#" alt="Работа за компьютером">
+                                </picture>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
                                     dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
