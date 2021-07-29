@@ -322,6 +322,7 @@ img {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
+  z-index: 2;
   background-color: var(--primary-white-color);
   transform: translateX(100%);
   transition: var(--effect-duration) var(--timing-function);
