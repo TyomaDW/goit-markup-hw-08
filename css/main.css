@@ -157,14 +157,16 @@ img {
   }
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-}
-
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -172,8 +174,6 @@ img {
   display: flex;
   align-items: center;
   margin-left: 88px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .nav-item:not(:last-child) {
@@ -181,6 +181,8 @@ img {
 }
 
 .nav-list {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -196,6 +198,7 @@ img {
 }
 
 .current-page {
+  position: relative;
   color: var(--accent-color);
 }
 
@@ -211,11 +214,25 @@ img {
 }
 
 .auth-nav {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
   color: var(--lead-text-color);
 }
 
+.auth-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
 .auth-list {
+  display: flex;
+  align-items: center;
   color: inherit;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  padding-top: 5px;
+  padding-bottom: 5px;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color var(--effect-duration) var(--timing-function);
