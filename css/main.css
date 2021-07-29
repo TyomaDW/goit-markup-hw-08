@@ -137,6 +137,8 @@ img {
   .logo {
     font-size: 26px;
     line-height: 1.19;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -151,7 +153,7 @@ img {
   padding-bottom: 10px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header__logo-wrapper {
     padding: 0;
   }
@@ -163,7 +165,7 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu {
     display: flex;
     align-items: center;
@@ -174,6 +176,12 @@ img {
   display: flex;
   align-items: center;
   margin-left: 88px;
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
+  }
 }
 
 .nav-item:not(:last-child) {
@@ -214,10 +222,23 @@ img {
 }
 
 .auth-nav {
-  display: flex;
-  flex-direction: column;
-  margin-left: 80px;
   color: var(--lead-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .auth-nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    flex-direction: inherit;
+    align-items: center;
+    margin-left: 278px;
+  }
 }
 
 .auth-item:not(:last-child) {
@@ -231,10 +252,9 @@ img {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+  text-decoration: none;
   padding-top: 5px;
   padding-bottom: 5px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
   transition: color var(--effect-duration) var(--timing-function);
 }
 
@@ -242,9 +262,40 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .auth-list {
+    font-size: 14px;
+    line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-item:not(:last-child) {
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+}
+
 .contact-icons {
   fill: currentColor;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-tel {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .header__menu-btn {
