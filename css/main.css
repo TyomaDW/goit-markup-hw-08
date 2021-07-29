@@ -72,7 +72,6 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 
 @media screen and (min-width: 480px) {
@@ -478,14 +477,27 @@ img {
 
 .button-nav {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
 }
 
 .button-nav .link:hover,
 .button-nav .link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .button-nav {
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-nav {
+    padding-bottom: 50px;
+  }
 }
 
 .button-align {
@@ -508,6 +520,7 @@ img {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
+  margin: 0 4px 15px 4px;
   transition: color var(--effect-duration) var(--timing-function), background-color var(--effect-duration) var(--timing-function), box-shadow var(--effect-duration) var(--timing-function);
 }
 
@@ -515,6 +528,12 @@ img {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: var(--button-shadow);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-button {
+    margin: 0;
+  }
 }
 
 .button-current {
@@ -998,17 +1017,44 @@ img {
   margin-left: 10px;
 }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+@media screen and (min-width: 768px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
-.projects-item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
+@media screen and (min-width: 1200px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects-item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-item {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projects-item:not(:first-child) {
+    margin-top: 30px;
+  }
 }
 
 .projects-title {
