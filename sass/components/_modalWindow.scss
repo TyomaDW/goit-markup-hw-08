@@ -34,7 +34,7 @@
 
   transition: transform 500ms var(--timing-function), visibility 500ms var(--timing-function);
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 479px) {
     width: 96%;
     height: 602px;
   }
