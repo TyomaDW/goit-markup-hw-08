@@ -332,7 +332,7 @@ img {
   transform: translateX(0);
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 600px) {
   .menu-container {
     opacity: 0;
   }
