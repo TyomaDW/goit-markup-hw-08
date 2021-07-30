@@ -126,7 +126,7 @@ img {
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 479px) {
   .logo {
     padding: 26px 0 26px 0px;
   }
@@ -332,6 +332,12 @@ img {
   transform: translateX(0);
 }
 
+@media screen and (min-width: 450px) {
+  .menu-container {
+    opacity: 0;
+  }
+}
+
 .menu-toggle {
   padding: 11px;
   position: absolute;
@@ -347,6 +353,9 @@ img {
 }
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
@@ -355,7 +364,6 @@ img {
 
 .mobile-menu__list {
   list-style: none;
-  min-height: 63vh;
 }
 
 .mobile-menu__item {
@@ -368,6 +376,7 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02em;
   list-style: none;
+  margin-top: auto;
 }
 
 .mobile-contacts__item {
@@ -382,6 +391,12 @@ img {
   text-decoration: none;
   color: var(--lead-text-color);
   white-space: nowrap;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-contacts__link {
+    font-size: 8vw;
+  }
 }
 
 .mobile-social {
@@ -422,7 +437,7 @@ img {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  width: 100%;
+  max-width: 1600px;
   height: 400px;
   background-repeat: no-repeat;
   background-position: center;
@@ -508,7 +523,7 @@ img {
 .button-nav {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .button-nav .link:hover,
@@ -1194,6 +1209,13 @@ img {
   transition: transform 500ms var(--timing-function), visibility 500ms var(--timing-function);
 }
 
+@media screen and (max-width: 320px) {
+  .modal {
+    width: 96%;
+    height: 602px;
+  }
+}
+
 @media (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -1315,8 +1337,22 @@ textarea::placeholder {
   background-image: url("../images/icon-check.svg");
 }
 
+@media screen and (max-width: 320px) {
+  .checkbox-hidden:checked + .checkbox-custom {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 .checkbox-hidden:focus + .checkbox-custom {
   border-color: var(--accent-color);
+}
+
+@media screen and (max-width: 320px) {
+  .checkbox-custom {
+    height: 11px;
+  }
 }
 
 .form-label {
