@@ -124,14 +124,12 @@ img {
   font-size: 24px;
   line-height: 1.16;
   text-decoration: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 0 16px 0;
 }
 
 @media screen and (min-width: 768px) {
   .logo {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding: 26px 0 26px 0;
   }
 }
 
@@ -139,8 +137,7 @@ img {
   .logo {
     font-size: 26px;
     line-height: 1.19;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding: 24px 0 25px 0;
   }
 }
 
@@ -151,7 +148,6 @@ img {
 .header__logo-wrapper {
   display: flex;
   align-items: center;
-  padding: 0;
 }
 
 @media screen and (max-width: 767px) {
