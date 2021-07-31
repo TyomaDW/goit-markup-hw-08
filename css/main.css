@@ -124,11 +124,14 @@ img {
   font-size: 24px;
   line-height: 1.16;
   text-decoration: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 768px) {
   .logo {
-    padding: 26px 0 26px 0px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 
@@ -148,14 +151,6 @@ img {
 .header__logo-wrapper {
   display: flex;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .header__logo-wrapper {
-    padding: 0;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -332,7 +327,7 @@ img {
   transform: translateX(0);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 767px) {
   .menu-container {
     opacity: 0;
   }
