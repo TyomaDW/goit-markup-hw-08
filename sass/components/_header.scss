@@ -181,7 +181,7 @@
   background-color: var(--primary-white-color);
 
   transform: translateX(100%);
-  transition: var(--effect-duration) var(--timing-function);
+  transition: opacity var(--effect-duration) var(--timing-function);
 
   &.is-open {
     transform: translateX(0);

@@ -317,7 +317,7 @@ img {
   z-index: 2;
   background-color: var(--primary-white-color);
   transform: translateX(100%);
-  transition: var(--effect-duration) var(--timing-function);
+  transition: opacity var(--effect-duration) var(--timing-function);
 }
 
 .menu-container.is-open {
